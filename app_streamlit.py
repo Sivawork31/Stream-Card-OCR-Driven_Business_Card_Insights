@@ -8,6 +8,8 @@ data_extraction, database_side = st.tabs(
 
 
 
+
+
 st.balloons()
 st.title(':violet[Bizcardx Data Extraction🖼️]')
 
@@ -51,4 +53,5 @@ with database_side:
     value = str(st.selectbox('Please select value to search', df[column]))
     if st.button('Search Data'):
         st.dataframe(df[df[column] == value])
+
 
